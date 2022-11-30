@@ -1,7 +1,7 @@
 "use strict";
 /**
- * house controller
+ * building service
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 const strapi_1 = require("@strapi/strapi");
-exports.default = strapi_1.factories.createCoreController('api::house.house');
+exports.default = strapi_1.factories.createCoreService('api::building.building');
