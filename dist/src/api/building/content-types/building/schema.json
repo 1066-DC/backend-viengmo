@@ -37,6 +37,30 @@
             "relation": "manyToMany",
             "target": "api::photo.photo",
             "inversedBy": "buildings"
+        },
+        "profile": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::photo.photo"
+        },
+        "main": {
+            "type": "dynamiczone",
+            "components": [
+                "photo.photo"
+            ]
+        },
+        "name": {
+            "type": "string"
+        },
+        "front": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
         }
     }
 }

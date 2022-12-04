@@ -11,6 +11,11 @@ export default ({ env }) => ({
       },
     },
   },
+  'strapi-plugin-populate-deep': {
+    config: {
+      defaultDepth: 3, // Default is 5
+    }
+  },
   upload: {
     config: {
       provider: 'aws-s3',

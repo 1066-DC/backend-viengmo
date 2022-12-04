@@ -9428,6 +9428,11 @@
   "resolved" "https://registry.npmjs.org/std-env/-/std-env-3.2.1.tgz"
   "version" "3.2.1"
 
+"strapi-plugin-populate-deep@^1.1.2":
+  "integrity" "sha512-fKw1BMRpdWbi1D+E0Yq08lZFxrTHgdPQ2P5jKEuXEE5YHvHiepSHVQtymDJGQ3WRWierem8ZBpnz2nl6iRx8Gw=="
+  "resolved" "https://registry.npmjs.org/strapi-plugin-populate-deep/-/strapi-plugin-populate-deep-1.1.2.tgz"
+  "version" "1.1.2"
+
 "strapi-provider-email-sendgrid@^3.6.10":
   "integrity" "sha512-DVTxXLcGKVE1T757cnHVToK4KwGFdSkXq1SwUY4HupYAs4g5T4il3zleivq/xduxGlVg44kqOx/UejLBIDyKTw=="
   "resolved" "https://registry.npmjs.org/strapi-provider-email-sendgrid/-/strapi-provider-email-sendgrid-3.6.10.tgz"

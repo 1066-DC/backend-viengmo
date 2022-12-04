@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_photo_photos",
+  "info": {
+    "displayName": "Photo",
+    "icon": "barcode"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
