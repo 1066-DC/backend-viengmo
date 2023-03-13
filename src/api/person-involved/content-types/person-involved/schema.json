@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "person_involveds",
+  "info": {
+    "singularName": "person-involved",
+    "pluralName": "person-involveds",
+    "displayName": "Person Involved"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "website": {
+      "type": "string",
+      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/"
+    },
+    "buildings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::building.building",
+      "mappedBy": "construction_compagnies"
+    }
+  }
+}
