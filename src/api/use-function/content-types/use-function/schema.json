@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "use_functions",
+  "info": {
+    "singularName": "use-function",
+    "pluralName": "use-functions",
+    "displayName": "Use Function"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "function": {
+      "type": "string",
+      "required": true
+    },
+    "buildings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::building.building",
+      "mappedBy": "use_function"
+    }
+  }
+}
