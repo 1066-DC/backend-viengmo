@@ -61,19 +61,19 @@
     "current_owner": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::person-involved.person-involved",
+      "target": "api::actor.actor",
       "inversedBy": "buildings"
     },
     "architect": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::person-involved.person-involved",
+      "target": "api::actor.actor",
       "inversedBy": "buildings"
     },
-    "construction_compagnies": {
+    "construction_companies": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::person-involved.person-involved",
+      "target": "api::actor.actor",
       "inversedBy": "buildings"
     },
     "history_events": {

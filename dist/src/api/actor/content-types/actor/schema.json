@@ -1,10 +1,10 @@
 {
     "kind": "collectionType",
-    "collectionName": "person_involveds",
+    "collectionName": "actors",
     "info": {
-        "singularName": "person-involved",
-        "pluralName": "person-involveds",
-        "displayName": "Person Involved"
+        "singularName": "actor",
+        "pluralName": "actors",
+        "displayName": "Actor"
     },
     "options": {
         "draftAndPublish": true
@@ -19,14 +19,13 @@
             "type": "text"
         },
         "website": {
-            "type": "string",
-            "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/"
+            "type": "string"
         },
         "buildings": {
             "type": "relation",
             "relation": "manyToMany",
             "target": "api::building.building",
-            "mappedBy": "construction_compagnies"
+            "mappedBy": "construction_companies"
         }
     }
 }
