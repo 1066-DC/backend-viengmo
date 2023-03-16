@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bibliographic_references",
+  "info": {
+    "singularName": "bibliographic-reference",
+    "pluralName": "bibliographic-references",
+    "displayName": "Bibliographic Reference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "quote": {
+      "type": "text"
+    },
+    "website": {
+      "type": "string",
+      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/"
+    },
+    "buildings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::building.building",
+      "mappedBy": "bibliographic_references"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "building_groups",
+  "info": {
+    "singularName": "building-group",
+    "pluralName": "building-groups",
+    "displayName": "Building Group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "buildings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::building.building",
+      "mappedBy": "building_groups"
+    }
+  }
+}

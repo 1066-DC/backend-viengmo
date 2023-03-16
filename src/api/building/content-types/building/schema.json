@@ -32,35 +32,81 @@
         "audios"
       ]
     },
-    "photos": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::photo.photo",
-      "inversedBy": "buildings"
-    },
-    "profile": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::photo.photo"
-    },
-    "main": {
-      "type": "dynamiczone",
-      "components": [
-        "photo.photo"
-      ]
-    },
     "name": {
       "type": "string"
     },
     "front": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "building_groups": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::building-group.building-group",
+      "inversedBy": "buildings"
+    },
+    "bibliographic_references": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::bibliographic-reference.bibliographic-reference",
+      "inversedBy": "buildings"
+    },
+    "current_owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::actor.actor",
+      "inversedBy": "buildings"
+    },
+    "architect": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::actor.actor",
+      "inversedBy": "buildings"
+    },
+    "construction_companies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::actor.actor",
+      "inversedBy": "buildings"
+    },
+    "history_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::history-event.history-event",
+      "mappedBy": "building"
+    },
+    "surface_building": {
+      "type": "decimal"
+    },
+    "architectural_elements": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::architectural-element.architectural-element",
+      "mappedBy": "buildings"
+    },
+    "usage_status": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::usage-status.usage-status",
+      "inversedBy": "buildings"
+    },
+    "use_function": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::use-function.use-function",
+      "inversedBy": "buildings"
+    },
+    "year_of_completion": {
+      "type": "string",
+      "regex": "^[12][0-9]{3}$",
+      "required": false
     }
   }
 }
