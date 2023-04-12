@@ -14,8 +14,9 @@
     "@strapi/plugin-users-permissions": "4.4.3",
     "@strapi/provider-email-sendgrid": "^4.4.5",
     "@strapi/provider-upload-aws-s3": "^4.5.2",
-    "@strapi/strapi": "4.6.2",
+    "@strapi/strapi": "4.4.5",
     "pg": "8.6.0",
+    "strapi-plugin-google-map-picker": "^1.0.8",
     "strapi-provider-email-sendgrid": "^3.6.10"
   },
   "author": {

@@ -13,6 +13,7 @@ export default [
             'blob:',
             'dl.airtable.com',
             'viengmo-media-files.s3.ap-southeast-1.amazonaws.com',
+            'maps.googleapis.com', 'maps.gstatic.com',
           ],
           'media-src': [
             "'self'",
@@ -21,6 +22,7 @@ export default [
             'dl.airtable.com',
             'viengmo-media-files.s3.ap-southeast-1.amazonaws.com',
           ],
+          "script-src": ["'self'", "maps.googleapis.com", "maps.gstatic.com"],
           upgradeInsecureRequests: null,
         },
       },

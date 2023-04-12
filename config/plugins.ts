@@ -16,6 +16,12 @@ export default ({ env }) => ({
       defaultDepth: 3, // Default is 5
     }
   },
+  "google-map-picker": {
+    config: {
+      apiKey: env("GOOGLE_MAP_API_KEY"), // required
+      default_center: { lat: 17.98, lng: 102.61 }, // required
+    },
+  },
   upload: {
     config: {
       provider: 'aws-s3',

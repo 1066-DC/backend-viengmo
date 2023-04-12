@@ -15,12 +15,6 @@
     "description": {
       "type": "richtext"
     },
-    "longitude": {
-      "type": "float"
-    },
-    "latitude": {
-      "type": "float"
-    },
     "medias": {
       "type": "media",
       "multiple": true,
@@ -107,6 +101,10 @@
       "type": "string",
       "regex": "^[12][0-9]{3}$",
       "required": false
+    },
+    "location": {
+      "type": "customField",
+      "customField": "plugin::google-map-picker.place"
     }
   }
 }
